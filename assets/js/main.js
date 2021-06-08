@@ -100,7 +100,6 @@ const showAll = () => {
         document.getElementById('itemDoCounter').innerHTML = doCounter.length;
         // Total cost
         let totalCost = 0;
-        document.getElementById('itemTotalCost').innerHTML = totalCost;
 
         // Item done counter
         const doneCounter = getitems.filter(item => item.status == 'Done');
@@ -149,7 +148,7 @@ const showAll = () => {
                 </div>
             
             `;
-            document.getElementById('itemTotalCost').innerHTML += totalCost;
+            document.getElementById('itemTotalCost').innerHTML = totalCost;
             
         }
     }
